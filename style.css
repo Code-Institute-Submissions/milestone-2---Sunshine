@@ -5,6 +5,7 @@
   --text-color: #3f3d56;
 }
 
+/* remove browser default padding, margin and box-sizing */
 * {
   padding: 0;
   margin: 0;
@@ -54,6 +55,20 @@
   font-family: 'Open Sans';
   font-size: 48px;
   color: var(--text-color);
+}
+
+.cta .searchbox-button-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cta .searchbox-button-container #search-box {
+  width: 20rem;
+  height: 3rem;
+  border: 3px solid var(--primary-color);
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 #graphic-container {
