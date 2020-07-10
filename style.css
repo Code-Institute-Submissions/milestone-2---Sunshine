@@ -42,6 +42,20 @@
   color: var(--primary-color);
 }
 
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.cta p {
+  max-width: 60%;
+  font-family: 'Open Sans';
+  font-size: 48px;
+  color: var(--text-color);
+}
+
 #graphic-container {
   flex: 1;
 }
