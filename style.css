@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
 
+:root {
+  --primary-color: #6c63ff;
+  --text-color: #3f3d56;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -18,6 +23,23 @@
   display: flex;
   flex-direction: column;
   padding: 2rem;
+}
+
+#title-logo {
+  display: flex;
+  align-items: center;
+}
+
+#title-logo img {
+  width: 80px;
+  height: 80px;
+}
+
+#title-logo h1 {
+  font-size: 96px;
+  font-family: 'Open Sans';
+  line-height: 100%;
+  color: var(--primary-color);
 }
 
 #graphic-container {
