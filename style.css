@@ -12,3 +12,14 @@
   min-height: 100vh;
   max-height: 100vh;
 }
+
+#landing {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+#graphic-container {
+  flex: 1;
+}
