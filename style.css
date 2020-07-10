@@ -99,7 +99,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(14, 173, 105, 0.33);
+  /* background-color: rgba(14, 173, 105, 0.33); */
+  background-color: #00b4ff;
   min-width: 50vw;
 }
 
