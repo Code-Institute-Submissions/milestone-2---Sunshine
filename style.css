@@ -34,6 +34,7 @@
 #title-logo img {
   width: 80px;
   height: 80px;
+  margin-right: 3rem;
 }
 
 #title-logo h1 {
@@ -67,10 +68,34 @@
   width: 20rem;
   height: 3rem;
   border: 3px solid var(--primary-color);
-  border-radius: 10px;
+  border-radius: 1rem;
   margin-bottom: 1rem;
+  font-size: 24px;
+  padding-left: 1rem;
+  font-family: 'Open Sans';
+  color: var(--text-color);
+}
+
+.cta .searchbox-button-container #search-button {
+  height: 3rem;
+  width: 10rem;
+  background: white;
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  border-radius: 1rem;
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
 }
 
 #graphic-container {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(14, 173, 105, 0.33);
+  min-width: 50vw;
+}
+
+#graphic-container img {
+  max-width: 80%;
 }
