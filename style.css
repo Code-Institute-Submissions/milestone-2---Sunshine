@@ -38,7 +38,7 @@
 }
 
 #title-logo h1 {
-  /* font-size: 96px; */
+  font-size: calc(16px + 5vw);
   font-family: 'Open Sans';
   line-height: 0.8em;
   color: var(--primary-color);
@@ -54,7 +54,7 @@
 .cta p {
   max-width: 60%;
   font-family: 'Open Sans';
-  /* font-size: calc(16px + 2vw); */
+  font-size: calc(16px + 2vw);
   color: var(--text-color);
 }
 
