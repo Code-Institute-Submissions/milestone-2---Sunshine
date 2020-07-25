@@ -109,7 +109,7 @@
   background-color: #00b4ff;
 }
 
-#graphic-container img {
+#graphic-container #weather-img {
   max-width: 80%;
 }
 

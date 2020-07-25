@@ -2,14 +2,15 @@ let locationKey, searchLocation, searchLocationCountry;
 // let Headline, DailyForecasts;
 const apiKey = 'Ufs32bf0WathXSbMJGU1qV9kBL6EMR9u';
 
-let targetLocation = document.querySelector('#search-box').value;
 let searchButton = document.querySelector('#search-button ');
 
 searchButton.addEventListener('click', () => {
-  if (targetLocation === '') {
-    alert('Please enter a location');
-  } else {
+  let targetLocation = document.querySelector('#search-box').value;
+  console.log(targetLocation);
+  if (targetLocation != '') {
     getLocationData(targetLocation);
+  } else {
+    alert('Please enter a location');
   }
 });
 
@@ -40,9 +41,22 @@ function get5DayWeather(cityKey) {
   fiveDayData
     .then((response) => response.json())
     .then((data) => {
-      displayWeatherData(data);
+      display5DayWeatherData(data);
     })
     .catch((err) => {
       console.log(err);
     });
+}
+
+function display5DayWeatherData(weatherData) {
+  console.log(weatherData);
+  document.querySelector('.cta').style.display = 'none';
+  document.querySelector('#weather-img').style.display = 'none';
+  let today = document.createElement('div');
+  let landingContainer = document.querySelector('#landing');
+  landingContainer.appendChild(today);
+  today.classList.add('today');
+
+  let weatherArray = weatherData.DailyForecasts;
+  let weatherItem = ``;
 }
