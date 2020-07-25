@@ -17,7 +17,7 @@ searchButton.addEventListener('click', () => {
 // function using the location entered in the search box to retrieve the location key
 function getLocationData(searchValue) {
   let locationData = fetch(
-    `http://dataservice.accuweather.com/locations/v1/search?apikey=${apiKey}&q=${searchValue}`
+    `https://dataservice.accuweather.com/locations/v1/search?apikey=${apiKey}&q=${searchValue}`
   );
 
   locationData
@@ -35,7 +35,7 @@ function getLocationData(searchValue) {
 // uses the location key retrieved in the getLocationData function to send a request to the api for the 5 day weather report
 function get5DayWeather(cityKey) {
   let fiveDayData = fetch(
-    `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${cityKey}?apikey=${apiKey}&metric=true`
+    `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${cityKey}?apikey=${apiKey}&metric=true`
   );
 
   fiveDayData
