@@ -1,6 +1,6 @@
 let locationKey, searchLocation, searchLocationCountry;
 // let Headline, DailyForecasts;
-const apiKey = 'Ufs32bf0WathXSbMJGU1qV9kBL6EMR9u';
+const apiKey = 'IYZf2eTw9XH3uBNLkfINMWL3DycoMsYx';
 
 let searchButton = document.querySelector('#search-button ');
 
