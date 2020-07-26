@@ -20,6 +20,11 @@
   max-height: 100vh;
   background-color: #00b4ff;
   overflow: hidden;
+  background: #00b4ff;
+  background: #00b4ff;
+  background: -webkit-linear-gradient(bottom, #00b4ff, #ffffff);
+  background: -moz-linear-gradient(bottom, #00b4ff, #ffffff);
+  background: linear-gradient(to top, #00b4ff, #ffffff);
 }
 
 #landing {
@@ -43,7 +48,7 @@
   font-size: calc(16px + 2vw);
   font-family: 'Open Sans';
   line-height: 0.8em;
-  color: white;
+  color: var(--text-color);
 }
 
 .cta {
@@ -73,22 +78,22 @@
   width: 15vw;
   min-width: 160px;
   height: 3rem;
-  border: 3px solid var(--primary-color);
-  border-radius: 1rem;
+  /* border: 3px solid var(--primary-color); */
+  /* border-radius: 1rem; */
   margin-bottom: 1rem;
   font-size: 24px;
   padding-left: 1rem;
   font-family: 'Open Sans';
-  color: var(--text-color);
+  color: black;
 }
 
 .cta .searchbox-button-container #search-button {
   height: 3rem;
   width: 10rem;
   background: white;
-  color: var(--primary-color);
-  border: 3px solid var(--primary-color);
-  border-radius: 1rem;
+  color: black;
+  /* border: 3px solid var(--primary-color); */
+  /* border-radius: 1rem; */
   font-family: 'Open Sans';
   font-size: 1.5rem;
   transition: all 0.3s ease-in;
@@ -96,8 +101,8 @@
 
 .cta .searchbox-button-container #search-button:hover {
   cursor: pointer;
-  color: white;
-  background-color: var(--primary-color);
+  /* color: white;
+  background-color: var(--primary-color); */
 }
 
 #graphic-container {
@@ -106,7 +111,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00b4ff;
 }
 
 #graphic-container #weather-img {
