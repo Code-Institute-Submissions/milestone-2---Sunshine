@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
 
 :root {
-  --primary-color: #6c63ff;
+  --primary-color: #00b4ff;
   --text-color: #3f3d56;
 }
 
@@ -78,13 +78,18 @@
   width: 15vw;
   min-width: 160px;
   height: 3rem;
-  /* border: 3px solid var(--primary-color); */
-  /* border-radius: 1rem; */
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
   margin-bottom: 1rem;
   font-size: 24px;
   padding-left: 1rem;
   font-family: 'Open Sans';
   color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.cta .searchbox-button-container #search-box:focus {
+  box-shadow: inset 5px 5px 10px #d9d9d9, inset -5px -5px 10px #ffffff;
 }
 
 .cta .searchbox-button-container #search-button {
@@ -92,8 +97,8 @@
   width: 10rem;
   background: white;
   color: black;
-  /* border: 3px solid var(--primary-color); */
-  /* border-radius: 1rem; */
+  border: 1px solid var(--primary-color);
+  border-radius: 2rem;
   font-family: 'Open Sans';
   font-size: 1.5rem;
   transition: all 0.3s ease-in;
@@ -101,8 +106,9 @@
 
 .cta .searchbox-button-container #search-button:hover {
   cursor: pointer;
-  /* color: white;
-  background-color: var(--primary-color); */
+  color: white;
+  background: linear-gradient(145deg, #00c1ff, #00a2e6);
+  box-shadow: 5px 5px 15px #0099d9, -5px -5px 15px #00cfff;
 }
 
 #graphic-container {
