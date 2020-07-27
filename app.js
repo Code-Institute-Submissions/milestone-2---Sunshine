@@ -50,13 +50,19 @@ function get5DayWeather(cityKey) {
 
 function display5DayWeatherData(weatherData) {
   console.log(weatherData);
-  document.querySelector('.cta').style.display = 'none';
-  document.querySelector('#weather-img').style.display = 'none';
-  let today = document.createElement('div');
-  let landingContainer = document.querySelector('#landing');
-  landingContainer.appendChild(today);
-  today.classList.add('today');
+  let ctaContainer = document.querySelector('.cta');
+  ctaContainer.style.display = 'none';
+  let graphicContainer = document.querySelector('#graphic-container');
+  graphicContainer.style.display = 'none';
 
-  let weatherArray = weatherData.DailyForecasts;
-  let weatherItem = ``;
+  let headline = document.createElement('div');
+  let landingContainer = document.querySelector('#landing');
+  landingContainer.appendChild(headline);
+  headline.classList.add('headline');
+
+  let weatherHeadline = weatherData.Headline;
+  let headlineDate = dayjs(weatherHeadline.EffectiveDate).format('D MMM YYYY');
+  console.log(weatherHeadline);
+  let headlineContent = `<img src='https://source.unsplash.com/featured/?weather,${weatherHeadline.Category}'><h2>Headline for ${headlineDate}</h2><div class='headline-text'>${weatherHeadline.Text}</div>`;
+  headline.innerHTML = headlineContent;
 }
