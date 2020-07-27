@@ -20,11 +20,10 @@
   max-height: 100vh;
   background-color: #00b4ff;
   overflow: hidden;
-  background: #00b4ff;
-  background: #00b4ff;
-  background: -webkit-linear-gradient(bottom, #00b4ff, #ffffff);
+
+  /* background: -webkit-linear-gradient(bottom, #00b4ff, #ffffff);
   background: -moz-linear-gradient(bottom, #00b4ff, #ffffff);
-  background: linear-gradient(to top, #00b4ff, #ffffff);
+  background: linear-gradient(to top, #00b4ff, #ffffff); */
 }
 
 #landing {
@@ -35,7 +34,8 @@
 #title-logo {
   display: flex;
   align-items: flex-end;
-  padding: 1rem;
+  padding: 2rem 0;
+  margin: 0 4rem;
 }
 
 #title-logo img {
@@ -123,8 +123,26 @@
   max-width: 80%;
 }
 
-.today {
-  background-color: black;
+.headline {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 2rem; */
+  margin: 4rem;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #00a2e6, #00c1ff);
+  box-shadow: 20px 20px 60px #0099d9, -20px -20px 60px #00cfff;
+  overflow: hidden;
+}
+
+.headline h2 {
+  padding: 1rem;
+}
+
+.headline img {
+  height: 50%;
+  width: 100%;
 }
 
 @media screen and (max-width: 700px) {
