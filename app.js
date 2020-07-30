@@ -68,7 +68,7 @@ function display5DayWeatherData(weatherData) {
   fiveDay.classList.add('five-day');
 
   console.log(weatherHeadline);
-  let headlineContent = `<img src='https://source.unsplash.com/featured/?weather,${weatherHeadline.Category}'><h2>Headline for ${headlineDate}</h2><div class='headline-text'>${weatherHeadline.Text}</div>`;
+  let headlineContent = `<h2>Headline for ${headlineDate}</h2><div class='headline-text'>${weatherHeadline.Text}</div>`;
   headline.innerHTML = headlineContent;
 
   weatherArray.forEach((e) => {
