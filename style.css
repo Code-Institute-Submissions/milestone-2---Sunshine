@@ -44,6 +44,7 @@
   width: calc(16px + 2vw);
   height: calc(16px + 2vw);
   margin-right: 2vw;
+  z-index: 2;
 }
 
 #title-logo h1 {
@@ -51,6 +52,7 @@
   font-family: 'Open Sans';
   line-height: 0.8em;
   color: var(--text-color);
+  z-index: 2;
 }
 
 .cta {
@@ -123,6 +125,7 @@
 
 #graphic-container #weather-img {
   max-width: 80%;
+  filter: drop-shadow(1px 2px 3px #0073a5);
 }
 
 .headline {
@@ -151,6 +154,7 @@
 .headline img {
   height: 50%;
   width: 100%;
+  z-index: 2;
 }
 
 .five-day {
