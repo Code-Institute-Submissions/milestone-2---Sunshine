@@ -1,7 +1,5 @@
 let locationKey, searchLocation, searchLocationCountry;
-// let Headline, DailyForecasts;
 const apiKey = 'IYZf2eTw9XH3uBNLkfINMWL3DycoMsYx';
-
 let searchButton = document.querySelector('#search-button ');
 
 searchButton.addEventListener('click', () => {
@@ -35,7 +33,7 @@ function getLocationData(searchValue) {
 // uses the location key retrieved in the getLocationData function to send a request to the api for the 5 day weather report
 function get5DayWeather(cityKey) {
   let fiveDayData = fetch(
-    `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${cityKey}?apikey=${apiKey}&metric=true`
+    `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${cityKey}?apikey=${apiKey}&metric=true&details=true`
   );
 
   fiveDayData
@@ -85,16 +83,13 @@ function display5DayWeatherData(weatherData) {
 
     fiveDay.appendChild(daily);
     daily.innerHTML = `<div class="date">${date}</div>
-            <div class="daynight">Day<input type="checkbox" name="day-toggle" id="day-toggle" /><label
-                for="day-toggle"
-              ></label>Night</div>
             <div class="icon-description">
               <img src="/assets/img/icons/${Day.Icon}-s.png" alt="" class="icon" /><span class="description"
                 >${Day.IconPhrase}</span
               >
             </div>
-            <div class="precipitation">Moderate Rain</div>
-            <div class="temp">Max 20C Min 12C</div>
+            <div class="precipitation"><h3>Precipitation</h3><p>${Day.PrecipitationIntensity} ${Day.PrecipitationType}</p></div>
+            <div class="temp"><h3>Temperature</h3><p>Max: ${Maximum.Value}&#8451; Min: ${Minimum.Value}&#8451;</p></div>
             <button class="full-weather">More details</button>`;
   });
 }
