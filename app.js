@@ -53,6 +53,7 @@ function display5DayWeatherData(weatherData) {
   let ctaContainer = document.querySelector('.cta');
   let graphicContainer = document.querySelector('#graphic-container');
   let headline = document.createElement('div');
+  let fiveDay = document.createElement('div');
   let landingContainer = document.querySelector('#landing');
   let weatherHeadline = weatherData.Headline;
   let weatherArray = weatherData.DailyForecasts;
@@ -63,6 +64,8 @@ function display5DayWeatherData(weatherData) {
 
   landingContainer.appendChild(headline);
   headline.classList.add('headline');
+  landingContainer.appendChild(fiveDay);
+  fiveDay.classList.add('five-day');
 
   console.log(weatherHeadline);
   let headlineContent = `<img src='https://source.unsplash.com/featured/?weather,${weatherHeadline.Category}'><h2>Headline for ${headlineDate}</h2><div class='headline-text'>${weatherHeadline.Text}</div>`;
@@ -76,5 +79,22 @@ function display5DayWeatherData(weatherData) {
       Day,
       Night,
     } = e;
+    let daily = document.createElement('div');
+    daily.classList.add('weather-item');
+    let date = dayjs(e.Date).format('D MMM YYYY');
+
+    fiveDay.appendChild(daily);
+    daily.innerHTML = `<div class="date">${date}</div>
+            <div class="daynight">Day<input type="checkbox" name="day-toggle" id="day-toggle" /><label
+                for="day-toggle"
+              ></label>Night</div>
+            <div class="icon-description">
+              <img src="" alt="" class="icon" /><span class="description"
+                >${Day.IconPhrase}</span
+              >
+            </div>
+            <div class="precipitation">Moderate Rain</div>
+            <div class="temp">Max 20C Min 12C</div>
+            <button class="full-weather">More details</button>`;
   });
 }
