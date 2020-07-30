@@ -10,6 +10,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans';
+  color: white;
 }
 
 .page-container {
@@ -138,6 +140,12 @@
 
 .headline h2 {
   padding: 1rem;
+}
+
+.headline .headline-text {
+  padding: 0 1rem;
+  text-align: justify;
+  color: white;
 }
 
 .headline img {
