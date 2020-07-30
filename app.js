@@ -89,7 +89,7 @@ function display5DayWeatherData(weatherData) {
                 for="day-toggle"
               ></label>Night</div>
             <div class="icon-description">
-              <img src="" alt="" class="icon" /><span class="description"
+              <img src="/assets/img/icons/${Day.Icon}-s.png" alt="" class="icon" /><span class="description"
                 >${Day.IconPhrase}</span
               >
             </div>
