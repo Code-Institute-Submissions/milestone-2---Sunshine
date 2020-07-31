@@ -120,18 +120,24 @@ function displayFull(weatherObj) {
               <img src="/assets/img/icons/${
                 Day.Icon
               }-s.png" alt="" class="icon" /><span class="description"
-                >${Day.IconPhrase}</span
+                >${Day.LongPhrase}</span
               >
             </div>
             <div class="precipitation"><h3>Precipitation</h3><p>${
               Day.PrecipitationIntensity
-            } ${Day.PrecipitationType}</p></div>
+            } ${Day.PrecipitationType}</p><p> Hours of rain: ${
+    Day.HoursOfRain
+  }</p></div>
             <div class="temp"><h3>Temperature</h3><p>Max: ${
               Maximum.Value
             }&#8451; Min: ${Minimum.Value}&#8451;</p></div>
             <div><h3>Sun</h3><div>Hours of Sun: ${HoursOfSun}</div><div>Sunrise: ${dayjs(
     Sun.Rise
-  ).format('HH:mm')} Sunset: ${dayjs(Sun.Set).format(
+  ).format('HH:mm')}</div><div>Sunset: ${dayjs(Sun.Set).format(
+    'HH:mm'
+  )}</div></div><div><h3>Moon</h3><div>Moonrise: ${dayjs(Moon.Rise).format(
+    'HH:mm'
+  )}</div><div>Moonset: ${dayjs(Moon.Set).format(
     'HH:mm'
   )}</div></div><div></div><div></div><div></div>`;
 }

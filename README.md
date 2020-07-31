@@ -4,8 +4,6 @@ This website was designed as my second Milestone project, as part of the Fullsta
 
 Sunshine allows users to get a 5 day summary of the weather, for their chosen location, as well as a more detailed outline of the weather for any day in the next 5 days.
 
-## UX
-
 ### Mockups
 
 ![Mockups](readme-files/mockups.png)
@@ -18,22 +16,6 @@ The purpose of the site is to allow quick access to an overview of the weather f
 - As a user, I want to see a detailed summary of the weather on any chosen day within the next 5 days.
 
 ### Wireframes
-
-#### Mobile Wireframes
-
-![wireframes]()
-![wireframes]()
-![wireframes]()
-![wireframes]()
-![wireframes]()
-
-#### Desktop Wireframes
-
-![wireframes]()
-![wireframes]()
-![wireframes]()
-![wireframes]()
-![wireframes]()
 
 ## Features
 
